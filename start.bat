@@ -30,9 +30,9 @@ if not exist "frontend\node_modules" (
     cd ..
 )
 
-echo 🚀 Starting FastAPI backend on http://localhost:8000...
+echo 🚀 Starting FastAPI backend with hot reloading on http://localhost:8000...
 cd backend
-start /b python main.py
+start /b uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 cd ..
 
 echo Waiting for backend to start...

@@ -39,10 +39,10 @@ if [ ! -d "frontend/node_modules" ]; then
     cd ..
 fi
 
-# Start FastAPI backend
-echo "🚀 Starting FastAPI backend on http://localhost:8000..."
+# Start FastAPI backend with hot reloading
+echo "🚀 Starting FastAPI backend with hot reloading on http://localhost:8000..."
 cd backend
-python main.py &
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload &
 BACKEND_PID=$!
 cd ..
 
