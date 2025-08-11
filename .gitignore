@@ -1,3 +1,22 @@
 .env
 *.txt
 !requirements.txt
+
+# Node modules
+frontend/node_modules/
+frontend/build/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
