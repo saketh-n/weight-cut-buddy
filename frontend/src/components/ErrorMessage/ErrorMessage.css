@@ -1,0 +1,33 @@
+.error {
+  background: #ffe6e6;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.error h3 {
+  margin: 0 0 10px 0;
+  color: #e74c3c;
+}
+
+.error p {
+  margin: 0 0 15px 0;
+  color: #c0392b;
+  line-height: 1.5;
+}
+
+.retry-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.retry-btn:hover {
+  background: #c0392b;
+}
